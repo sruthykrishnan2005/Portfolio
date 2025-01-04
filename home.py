@@ -6,7 +6,4 @@ con=sqlite3.connect('database.db')
 @app.route('/')
 def fun1():
     return render_template('index.html')
-
-
-
 app.run()
