@@ -723,7 +723,7 @@ body {
 	border-radius: 50%;
 	object-fit: cover;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	margin-left:120px;
+	margin-left:300px;
   }
   
   .about-details {
@@ -753,11 +753,12 @@ body {
   
   .about-details li {
 	font-size: 16px;
-	margin-bottom: 10px;
+	margin-right: 200px;
   }
   
   .about-details li strong {
 	color: #f4a261;
+	margin-left: 200px;
   }
   
   @media (max-width: 768px) {
@@ -783,160 +784,55 @@ body {
 	}
   }
   
-header {
-	background-color: #2c3e50;
-	color: white;
-	padding: 20px 0;
-	text-align: center;
+/* Resume Section */
+.resume-section {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-h1 {
-	margin: 0;
-	font-size: 36px;
+.resume-section h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-.section {
-	max-width: 1000px;
-	margin: 30px auto;
-	padding: 20px;
-	background-color: white;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* Resume Preview Image */
+.resume-preview {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-h2 {
-	color: #2c3e50;
-	font-size: 28px;
-	margin-bottom: 10px;
-	border-bottom: 2px solid #2c3e50;
-	padding-bottom: 5px;
+.resume-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
-	color: #34495e;
-	font-size: 22px;
-	margin-bottom: 5px;
+/* Download Button */
+.download-button {
+    text-align: center;
+    margin-top: 20px;
 }
 
-p {
-	font-size: 16px;
-	line-height: 1.6;
-	margin-bottom: 10px;
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
+.button:hover {
+    background-color: #555;
 }
-
-li {
-	font-size: 16px;
-	margin-bottom: 5px;
-}
-
-a {
-	color: #3498db;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-
-.Professional-item p {
-	font-style: italic;
-	color: #7f8c8d;
-}
-
-
-.contact-item ul li {
-	font-size: 18px;
-}
-
-
-.education-item {
-	margin-bottom: 30px;
-}
-
-.education-item h3 {
-	font-size: 20px;
-	color: #2980b9;
-	margin-bottom: 5px;
-}
-
-.education-item p {
-	font-size: 16px;
-	color: #7f8c8d;
-}
-
-.internship-item {
-	margin-bottom: 30px;
-}
-
-.internship-item h3 {
-	font-size: 20px;
-	color: #2980b9;
-	margin-bottom: 5px;
-}
-
-.internship-item ul {
-	padding-left: 20px;
-}
-
-.internship-item ul li {
-	font-size: 16px;
-	color: #7f8c8d;
-}
-
-
-.Projects-item h2 {
-	font-size: 20px;
-	color: #2980b9;
-	margin-bottom: 5px;
-}
-
-.Projects-item p {
-	font-size: 16px;
-	color: #7f8c8d;
-}
-
-.technical-item p {
-	font-size: 16px;
-	color: #7f8c8d;
-}
-
-.technical-item {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 15px;
-}
-
-.technical-item p {
-	background-color: #ecf0f1;
-	padding: 8px 15px;
-	border-radius: 20px;
-	font-weight: bold;
-	color: #2980b9;
-}
-
-download-btn {
-	background-color: #ff6347;
-	color: #e5533d;
-	font-size: 1.1rem;
-	padding: 12px 25px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-	margin-top: 20px;
-}
-
-.download-btn:hover {
-	background-color: #e5533d;
-}
-
 .services {
 	background-color: #f4f4f4;
 	padding: 40px 0;

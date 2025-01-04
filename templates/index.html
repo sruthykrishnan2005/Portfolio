@@ -14,13 +14,13 @@
 		<nav class="navbar">
 			<div class="logo">SRUTHY</div>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Resume</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="../">About</a></li>
+				<li><a href="../">Resume</a></li>
+				<li><a href="../">Services</a></li>
+				<li><a href="../">Skills</a></li>
+				<li><a href="../">Projects</a></li>
+				<li><a href="../">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="content">
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-
+<!-- 
 	<header>
 		<h1>RESUME</h1>
 	</header>
@@ -118,8 +118,21 @@
 			<p>Python,HTML & CSS,React,Django,Javascript,Flask ,Bootstrap,MYSQL,PHP,C<strong></strong></p>
 		</div>
 		<button class="download-btn">Download CV</button>
-	</section>
+	</section> -->
 
+
+	<div class="resume-section">
+        <h2>My Resume</h2>
+      
+        <div class="resume-preview">
+            <img src="{{ url_for('static', filename='') }}" alt="Resume Preview" class="resume-image">
+        </div>
+
+        <p>Click the button below to download my full resume in PDF format.</p>
+
+        <div class="download-button">
+            <a href="{{ url_for('static', filename='') }}" download class="button">Download My Resume</a>
+        </div>
 
 	<div class="services">
         <h1>Services</h1>
