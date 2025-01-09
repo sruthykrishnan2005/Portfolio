@@ -3,17 +3,9 @@ body {
 	font-family: 'Arial', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: rgb(92, 41, 92);
+	background-color: rgb(163, 147, 147);
   }
-  
-  /* Container to center the navbar */
-  .container {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-  .navbar {
+.navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -21,29 +13,32 @@ body {
 	background-color: black;
 	color: #fff;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar .logo {
+	width: 100%;  
+	top: 0;
+	left: 0;
+}
+
+.navbar .logo {
 	font-size: 1.8rem;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-  }
-  
+	
+}
 
-  .navbar ul {
+.navbar ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	gap: 20px; 
-  }
-  
-  .navbar ul li {
+	gap: 20px;
+}
+
+.navbar ul li {
 	display: inline-block;
-  }
-  
-  .navbar ul li a {
+}
+
+.navbar ul li a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 1rem;
@@ -53,100 +48,84 @@ body {
 	padding: 10px 15px;
 	border-radius: 5px;
 	transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+}
 
-  .navbar ul li a:hover {
+.navbar ul li a:hover {
 	background-color: #3a74d0;
 	transform: scale(1.05);
-  }
-  
-  
-  .navbar ul li a.active {
-	background-color: #2c5fa8; 
-  }
-  
-  /* Responsive Design for Mobile */
-  @media (max-width: 768px) {
+}
+
+.navbar ul li a.active {
+	background-color: #2c5fa8;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
 	.navbar {
-	  flex-direction: column;
-	  padding: 20px;
-	  align-items: flex-start;
+		flex-direction: column;
+		padding: 20px;
+		align-items: flex-start;
+		width: 100%; 
 	}
-  
+
 	.navbar ul {
-	  flex-direction: column;
-	  width: 100%;
+		flex-direction: column;
+		width: 100%;
 	}
-  
+
 	.navbar ul li {
-	  width: 100%;
-	  text-align: left;
+		width: 100%;
+		text-align: left;
 	}
-  
+
 	.navbar ul li a {
-	  padding: 10px 20px;
-	  width: 100%;
+		padding: 10px 20px;
+		width: 100%;
 	}
-  }
-  
+}
+
+
+
 
 /* Content Section */
 .content {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    flex-direction: column; /* Stack the heading and image vertically */
-    margin-top: 100px; /* To offset navbar */
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px; 
     padding: 50px 0;
-    text-align: center; /* Center-align text inside the container */
+    text-align: center; 
 }
 
-/* Heading styles */
+
 .content h1 {
     font-size: 48px;
     font-weight: bold;
-    color: white;
+    color: black;
     line-height: 1.5;
-    margin: 0; /* Ensure no default margin on h1 */
+    margin: 0; 
 }
 
 .content h1 span {
-    color: #f39c12; /* Accent color for part of the heading */
+    color: rgb(238, 216, 22); 
 }
 
-/* Button Styles */
-.buttons a {
-    text-decoration: none;
-    padding: 15px 30px;
-    margin-right: 20px;
-    background-color: #f39c12;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    display: inline-block; /* Make buttons behave like inline elements */
-}
-
-.buttons a:hover {
-    background-color: #e67e22; /* Change color on hover */
-}
-
-/* Image Container */
 .image {
     display: flex;
-    justify-content: center; /* Horizontally center the image */
-    align-items: center; /* Vertically center the image (if container height allows) */
-    margin-top: 20px; /* Optional: space above the image */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
 }
 
-/* Image Styling */
+
 .image img {
-    width: 300px; /* Set the width */
-    height: 300px; /* Set the height to be equal to the width for a square */
-    border-radius: 10px; /* Optional: rounded corners for the square image */
-    object-fit: cover; /* Ensures the image covers the entire square without distortion */
-    display: block; /* Ensures the image takes up the entire element space */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for a 3D effect */
+    width: 300px;
+    height: 300px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* About Section */
@@ -160,15 +139,14 @@ body {
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* About Content Styling */
+ 
   .about-content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
   }
-  
-  /* Profile Image Styling */
+ 
   .profile-image {
 	width: 200px;
 	height: 200px;
@@ -180,12 +158,11 @@ body {
 	transition: transform 0.3s ease;
   }
   
-  /* Profile Image Hover Effect */
+
   .profile-image:hover {
 	transform: scale(1.05);
   }
   
-  /* About Details Styling */
   .about-details {
 	flex: 1;
 	min-width: 300px;
@@ -245,14 +222,13 @@ body {
 	text-align: center;
   }
   
-  /* Header Styling */
   .resume-section h2 {
 	font-size: 2rem;
 	color: #333;
 	margin-bottom: 30px;
   }
   
-  /* Button Styling */
+
   .download-button button {
 	padding: 12px 30px;
 	font-size: 1.2rem;
@@ -264,13 +240,12 @@ body {
 	transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
-  /* Button Hover Effects */
   .download-button button:hover {
 	background-color: #3a74d0;
 	transform: scale(1.05);
   }
   
-  /* Button Focus Styling */
+
   .download-button button:focus {
 	outline: none;
   }
@@ -302,8 +277,7 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Header Styling */
+
   .projects-container h2 {
 	text-align: center;
 	color: black;
@@ -311,7 +285,7 @@ body {
 	margin-bottom: 30px;
   }
   
-  /* Project Grid Layout */
+
   .project-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -319,7 +293,7 @@ body {
 	justify-items: center;
   }
   
-  /* Individual Project Styling */
+
   .project {
 	background-color: #f8f9fc;
 	border-radius: 10px;
@@ -335,7 +309,7 @@ body {
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
   
-  /* Project Image Styling */
+  
   .project-image {
 	width: 100%;
 	height: 200px;
@@ -348,7 +322,7 @@ body {
 	transform: scale(1.05);
   }
   
-  /* Project Title and Description */
+
   .project h1 {
 	font-size: 1.25rem;
 	color: #333;
@@ -361,7 +335,7 @@ body {
 	margin-bottom: 15px;
   }
   
-  /* Link Styling */
+
   .project a {
 	text-decoration: none;
 	display: block;
@@ -398,7 +372,6 @@ body {
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* Header Styling */
   .skills-section h2 {
 	text-align: center;
 	color: black;
@@ -406,7 +379,7 @@ body {
 	margin-bottom: 30px;
   }
   
-  /* Skill Container Styling */
+  
   .skill {
 	display: flex;
 	align-items: center;
@@ -421,8 +394,7 @@ body {
 	transform: translateY(-5px);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Skill Name Styling */
+
   .skill-name {
 	font-size: 1.25rem;
 	font-weight: 600;
@@ -432,9 +404,9 @@ body {
 	letter-spacing: 0.5px;
   }
   
-  /* Adding Icons (Optional) */
+
   .skill-name:before {
-	content: "\2022"; /* Adds a dot before each skill */
+	content: "\2022"; 
 	font-size: 2rem;
 	color: #4b8af7;
 	margin-right: 10px;
