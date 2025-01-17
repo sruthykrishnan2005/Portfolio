@@ -13,6 +13,11 @@
 	<div class="container">
 		<nav class="navbar">
 			<div class="logo">SRUTHY KRISHNAN</div>
+			<div class="hamburger" id="hamburger-icon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -152,5 +157,10 @@
 		</div>
 	</section>
 </body>
-
+<script>
+	// Toggle the navbar visibility when hamburger icon is clicked
+	document.getElementById("hamburger-icon").addEventListener("click", function() {
+		document.querySelector(".navbar").classList.toggle("active");
+	});
+</script>
 </html>
